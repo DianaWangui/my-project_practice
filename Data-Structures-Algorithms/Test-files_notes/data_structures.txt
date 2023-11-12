@@ -1,0 +1,38 @@
+DATA STRUCTURES AND ALGORITHMS:
+
+1. This file contain notes about Data Structures and algorithm.
+What is data structure and what is an algorith?
+Data structure is the way we organize and store data in the computer memory. For example when you want to store a single data of type int you will only initialize a variable int number = 30. 
+But sometimes a programmer want to store multiple data in memory at once and with only one declaration. That when we find the importance of knowing how to use data structures. 
+Examples of data structures available are arrays, queues, stack, linked list(single and double) etc.
+I am planning to use this repository to learn and explain everything I have learnt using this file. 
+Now lets understand algorithms and what they are. An algorithm is simple terms is like a step by step set of instruction used to solve a particular problem or specific task.
+Examples of algoritms used in different programming languages are insertion, searching, sorting, graphs, arrays, trees,
+etc.
+
+In my codes in the other directory, I have worked on {Current files} insertion and traversing an array. I will keep updating here everything I have done:
+
+1. ARRAYS
+1.1. Traversing an array:
+	Its one of the operation performed in an array of elements. Traversing means pointing at each element in array only once.During traversal, you can perform various operations on each element, such as reading its value, updating it, or using its value in some calculations.
+
+There are different ways to traverse an array, and the choice often depends on the programming language and the specific requirements of your task. 
+Common methods include using loops (for, while) to iterate through each element, or using higher-order functions (like map, forEach, etc.) in languages that support them.
+
+Here's a simple example of traversing an array in a programming language like C using a for loop:
+
+	my_array = [1, 2, 3, 4, 5]
+	for (i = 0; i < size: i++)
+		printf("%d", array[i]);
+
+
+In this example, the loop iterates through each element in the array my_array, and the prints each element to the console
+Traversing arrays is a fundamental operation in programming, and it's crucial for working with data stored in arrays or lists efficiently.
+
+1.2 Insertion in an array:
+	Inserting an element into an array typically involves adding a new element at a specific position within the array. The position can be determined by an index. 
+The process may involve shifting existing elements to make room for the new one. The exact method depends on the programming language you're using.
+Insertion program is a bit of a big code in c, so if you want to see an example kindly visit my {task-file_codes} in this repository.
+I have a good example of how to insert an element in an existing array that the user creates themselves.
+
+1.3 
