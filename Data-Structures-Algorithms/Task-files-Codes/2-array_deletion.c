@@ -6,26 +6,14 @@ int main(void)
 
 	printf("Enter the size of the array, not more than 20: ");
 	scanf("%d", &size);
-	printf("Enter the elements in the array: ");
+	printf("\nEnter the elements in the array: ");
 	for (i = 0; i < size; i++)
 	{
-		scanf("%d ,", &array[i]);
+		scanf("%d", &array[i]);
 	}
-
-	/* Printing elements in the array to the screen */
-	printf("The elements are: [");
-	for (i = 0; i < size - 1; i++)
-	{
-		printf("%d ,", array[i]);
-	}
-	if (size > 0)
-	{
-		printf("%d", array[size - 1]);
-	}
-	printf("]\n");
 
 	/* Delelting elements in a position chosen by user */
-	printf("Enter the position you want to delete the element");
+	printf("\nEnter the position you want to delete the element: ");
 	scanf("%d", &position);
 
 	/* Checkinf if position is greater than array or negative */
@@ -42,7 +30,7 @@ int main(void)
 		size--;
 	}
 	/* Printing new array after deleting element */
-	printf("New array is [");
+	printf("\nNew array is [");
 	for ( i = 0; i < size - 1; i++)
 	{
 		printf("%d ,", array[i]);
