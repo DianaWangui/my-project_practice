@@ -35,4 +35,10 @@ The process may involve shifting existing elements to make room for the new one.
 Insertion program is a bit of a big code in c, so if you want to see an example kindly visit my {task-file_codes} in this repository.
 I have a good example of how to insert an element in an existing array that the user creates themselves.
 
-1.3 
+1.3  Deletion in an array:
+	Just as one can insert elements in an array, one can also delete elements in the array as well. 
+The procedure is pretty much similar the only thing different is that the array becomes smaller in size. 
+The position of elements( if the deleted element is in a central os starting position) will change by shifting to the left. 
+This is mostly done in the sorted array where one uses loop(for loop) to shift elemets.
+In unsorted array, the method can be mase easier by just shiftig the element in the last position, (size) to the position you want to delete the element, this will overwrite the previous element which is pretty much same as deleting it.
+Also the code for this procedure of deleting an element, I used the sorted proecedure since it workes ob both soreted and unsorted, find it in my Tasks-Code directory.
