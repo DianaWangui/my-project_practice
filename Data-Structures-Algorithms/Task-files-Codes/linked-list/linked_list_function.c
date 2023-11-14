@@ -26,8 +26,9 @@ void my_linked_list(int choice)
 	temp = head;
 	while (temp != 0)
 	{
-		printf("%d\n", temp -> data);
+		printf("[%d]", temp -> data);
 		temp = temp -> next;
 	}
+	printf("\n");
 	/*printf("Count is: %d\n", count);*/
 }
