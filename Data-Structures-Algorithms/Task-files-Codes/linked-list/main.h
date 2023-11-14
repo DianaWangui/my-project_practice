@@ -8,6 +8,7 @@ struct node
 	struct node *next;
 };
 
-void my_linked_list();
+void my_linked_list(int choice);
+void insert_beginning(); 
 
 #endif

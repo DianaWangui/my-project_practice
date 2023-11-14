@@ -6,6 +6,7 @@ int main(void)
 	printf("Enter your choice: ");
 	scanf("%d", &choice);
 	my_linked_list(choice);
+	insert_beginning();
 
 	return (0);
 }

@@ -32,3 +32,16 @@ void my_linked_list(int choice)
 	printf("\n");
 	/*printf("Count is: %d\n", count);*/
 }
+
+void insert_beginning(struct node *head)
+{
+	struct node *newnode;
+	newnode = (struct node *) malloc(sizeof(struct node));
+	printf("Enter data: ");
+	scanf("%d", &newnode -> data);
+	/* assising the next part of new node to the address of first node which is stored in head */
+	newnode -> next = head;
+	/* Now making giving head address of the new created node */
+	head = newnode;
+
+}
