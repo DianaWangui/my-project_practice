@@ -7,6 +7,7 @@ int main(void)
 	scanf("%d", &choice);
 	my_linked_list(choice);
 	insert_beginning();
+	insert_end();
 
 	return (0);
 }

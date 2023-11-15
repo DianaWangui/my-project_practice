@@ -45,3 +45,24 @@ void insert_beginning(struct node *head)
 	head = newnode;
 
 }
+
+void insert_end()
+{
+	struct node *head, *newnode, *temp;
+	newnode = (struct node *) malloc(sizeof(struct node));
+	printf("\nEnter the data: ");
+	scanf("%d", &newnode -> data);
+	newnode -> next = 0;
+	if (head == NULL)
+	{
+		head = newnode;
+	}
+	else
+	{
+		while (temp -> next != 0)
+		{
+			temp = temp -> next;
+		}
+		temp -> next = newnode;
+	}
+}
