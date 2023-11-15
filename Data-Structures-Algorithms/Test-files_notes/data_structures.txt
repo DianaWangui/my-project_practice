@@ -42,3 +42,11 @@ The position of elements( if the deleted element is in a central os starting pos
 This is mostly done in the sorted array where one uses loop(for loop) to shift elemets.
 In unsorted array, the method can be mase easier by just shiftig the element in the last position, (size) to the position you want to delete the element, this will overwrite the previous element which is pretty much same as deleting it.
 Also the code for this procedure of deleting an element, I used the sorted proecedure since it workes ob both soreted and unsorted, find it in my Tasks-Code directory.
+
+2. **Linked List **
+2.1 Creating a linked list from user input:
+
+
+2.2 Inserting at the begining of a linked list
+
+2.3 Inserting at the end of a linked list
