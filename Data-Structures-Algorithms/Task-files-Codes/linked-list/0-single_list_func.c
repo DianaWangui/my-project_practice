@@ -46,23 +46,24 @@ void insert_beginning(struct node *head)
 
 }
 
-void insert_end()
+void insert_end(struct node *head)
 {
-	struct node *head, *newnode, *temp;
+	struct node *newnode, *temp;
 	newnode = (struct node *) malloc(sizeof(struct node));
+
+	/*Lets take data from user */
 	printf("\nEnter the data: ");
 	scanf("%d", &newnode -> data);
+
+	/* Initializing the end nodes to 0 since last nodes points to NULL */
 	newnode -> next = 0;
-	if (head == NULL)
+	temp = head;
+
+	/* A while loop to traverse to the last node where we can insert our new node */
+	while (temp -> next != 0)
 	{
-		head = newnode;
+		temp = temp -> next;
 	}
-	else
-	{
-		while (temp -> next != 0)
-		{
-			temp = temp -> next;
-		}
-		temp -> next = newnode;
-	}
+	/* now this will make the last node next to store the address of the new node pointed by (newnode*) */
+	temp -> next = newnode;
 }
