@@ -9,7 +9,7 @@ struct node
 };
 
 void my_linked_list(int choice);
-void insert_beginning();
-void insert_end();
+void insert_beginning(struct node *head);
+void insert_end(struct node *head);
 
 #endif
