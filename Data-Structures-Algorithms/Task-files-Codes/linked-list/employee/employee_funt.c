@@ -25,13 +25,9 @@ struct Employee* AddEmployee(struct Employee *head, int id, const char* name, co
 void display(struct Employee *head)
 {
 	struct Employee *current = head;
-	if (current != NULL)
+	while (current != NULL)
 	{
 		printf("Employee ID: %d, Employee name: %s, Empoyee position: %s\n", current -> id, current -> name, current -> position);
 		current = current -> next;
-	}
-	else
-	{
-		fprintf(stderr,"Failed to dislay Employee information");
 	}
 }
