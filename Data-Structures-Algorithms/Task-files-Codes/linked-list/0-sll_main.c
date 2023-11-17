@@ -2,13 +2,14 @@
 
 int main(void)
 {
+
 	struct node *head = NULL;
 	int choice;
-	printf("Enter your choice: ");
+
+	printf("Do you want to create a sll 1. Yes, 0. No\n");
 	scanf("%d", &choice);
-	my_linked_list(choice);
-	insert_beginning(head);
-	insert_end(head);
+
+	create_sll(head, choice);
 
 	return (0);
 }

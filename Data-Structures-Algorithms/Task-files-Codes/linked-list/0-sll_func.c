@@ -1,10 +1,12 @@
 #include "main.h"
 
-void my_linked_list(int choice)
+void create_sll(struct node *head, int choice)
 {
-	struct node *head, *newnode, *temp;
-	head = 0;
-	/*int count = 0; */
+	struct node *newnode, *temp;
+	/*temp is used to traverse and nodes > 2 */
+
+	/*head = NULL;*/
+
 	while (choice)
 	{
 		newnode = (struct node *) malloc(sizeof(struct node));
@@ -23,6 +25,9 @@ void my_linked_list(int choice)
 		printf("\nDo you want to enter another node: ");
 		scanf("%d", &choice);
 	}
+	insert_beginning(head);
+	insert_end(head);
+
 	temp = head;
 	while (temp != 0)
 	{
@@ -30,7 +35,10 @@ void my_linked_list(int choice)
 		temp = temp -> next;
 	}
 	printf("\n");
-	/*printf("Count is: %d\n", count);*/
+
+	/*insert_beginning(head);
+	 *insert_end(temp);
+	 */
 }
 
 void insert_beginning(struct node *head)
@@ -38,9 +46,12 @@ void insert_beginning(struct node *head)
 	struct node *newnode;
 	newnode = (struct node *) malloc(sizeof(struct node));
 	printf("Enter data: ");
+	
 	scanf("%d", &newnode -> data);
+	
 	/* assising the next part of new node to the address of first node which is stored in head */
 	newnode -> next = head;
+	
 	/* Now making giving head address of the new created node */
 	head = newnode;
 
