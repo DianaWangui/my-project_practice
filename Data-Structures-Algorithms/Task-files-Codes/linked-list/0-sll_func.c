@@ -27,18 +27,7 @@ void create_sll(struct node *head, int choice)
 	}
 	insert_beginning(head);
 	insert_end(head);
-
-	temp = head;
-	while (temp != 0)
-	{
-		printf("[%d]", temp -> data);
-		temp = temp -> next;
-	}
-	printf("\n");
-
-	/*insert_beginning(head);
-	 *insert_end(temp);
-	 */
+	display(head);
 }
 
 void insert_beginning(struct node *head)
@@ -77,4 +66,21 @@ void insert_end(struct node *head)
 	}
 	/* now this will make the last node next to store the address of the new node pointed by (newnode*) */
 	temp -> next = newnode;
+}
+void display(struct node *head)
+{
+	struct node *temp = head;
+	if (head == NULL)
+	{
+		printf("Nothing to print");
+	}
+	else
+	{
+		head = temp;
+		while (temp != NULL)
+		{
+			printf("Your sll is: %d", temp -> data);
+			temp = temp -> next;
+		}
+	}
 }

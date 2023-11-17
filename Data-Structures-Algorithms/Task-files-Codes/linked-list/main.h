@@ -17,6 +17,7 @@ struct node
 void create_sll(struct node *head, int choice);
 void insert_beginning(struct node *head);
 void insert_end(struct node *head);
+void display(struct node *head);
 
 /* Double linkd list function prototype */
 void create_dll();
