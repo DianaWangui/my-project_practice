@@ -13,15 +13,15 @@ int main(void)
 	printf("Emter the number of employes: ");
 	scanf("%d", &numberOfEmployees);
 
-	for (i = 0; i < numberOfEmployees; i++)
+	for (i = 0; i < numberOfEmployees; ++i)
 	{
-		printf("Enter the details of employee %d", i);
-		printf("ID\n: ");
+		printf("Enter the details of employee %d\n", i + 1);
+		printf("ID: ");
 		scanf("%d", &id);
-		printf("Name\n: ");
-		scanf("%[^\n]%*s", name);
-		printf("Position\n: ");
-		scanf("%[^\n]%*s", position);
+		printf("Name: ");
+		scanf("%s", name);
+		printf("Position: ");
+		scanf("%s", position);
 
 		employeeList = AddEmployee(employeeList, id, name, position);
 
